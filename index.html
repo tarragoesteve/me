@@ -20,7 +20,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- Navigation navbar-dark -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
+  <nav class="navbar navbar-expand-md fixed-top navbar-custom" id="mainNav">
     <div class="container">
       <a data-scroll class="navbar-brand js-scroll-trigger" href="#about">Esteve Tarrag&oacute;</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,6 +121,11 @@
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
 <script>
 	var scroll = new SmoothScroll('a[href*="#"]');
+  $('.nav-link').on('click', function(){
+    if ($(window).width() < 720){
+      $('.navbar-toggler').click(); //bootstrap 4.x
+    }
+});
 </script>
 
 </body>
