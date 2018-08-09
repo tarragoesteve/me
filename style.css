@@ -2,7 +2,6 @@
 /* Palette color codes */
 /* Palette URL: http://paletton.com/#uid=3000u0kiCFn8GVde7NVmtwSqXtg */
 
-/* Feel free to copy&paste color codes to your application */
 
 .icon {
   height: 50px;
@@ -17,7 +16,19 @@
 #portrait {
   width: 150px;
   border-radius: 100px;
+}
 
+#sport {
+  background: url("img/ski.jpg") no-repeat;
+  background-size: 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+}
+
+#sport:hover {
+  background: url("img/diving.jpg") no-repeat;
+  background-size: 150px;
 
 }
 
