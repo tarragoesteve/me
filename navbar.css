@@ -1,5 +1,5 @@
 .navbar-custom {
-  background-color: #e92525;
+  background-color: #8F230C;
 }
 
 .navbar-custom .navbar-brand {
@@ -27,7 +27,7 @@
 .navbar-custom .navbar-nav .nav-link.show,
 .navbar-custom .navbar-nav .nav-link.active {
   color: #000;
-  background-color: #ffbaba;
+  background-color: #FFBEBE;
   border-radius: 10px;
 }
 
