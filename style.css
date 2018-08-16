@@ -32,9 +32,13 @@
 }
 
 .bg-odd{
-  background-color: #d6eaf8;
+  background: url("img/stripes-light.png") repeat;
+
+  /*background-color: #d6eaf8;*/
 }
 
 .bg-even{
-  background-color:   #d1f2eb;
+  background: url("img/stripes-reverse.png") repeat;
+
+  /*background-color:   #d1f2eb;*/
 }
