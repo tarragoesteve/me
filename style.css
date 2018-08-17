@@ -32,13 +32,13 @@
 }
 
 .bg-odd{
-  background: url("img/stripes-light.png") repeat;
+  background: url("img/ski_bg.jpg") repeat;
 
   /*background-color: #d6eaf8;*/
 }
 
 .bg-even{
-  background: url("img/stripes-reverse.png") repeat;
+  background: url("img/sea.jpg") repeat;
 
   /*background-color:   #d1f2eb;*/
 }
