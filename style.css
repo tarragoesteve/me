@@ -3,6 +3,10 @@
   opacity: 0.5;
 }
 
+.logo {
+  height: 80px;
+}
+
 .icon:hover {
   opacity: 1;
 
@@ -32,13 +36,13 @@
 }
 
 .bg-odd{
-  background: url("img/ski_bg.jpg") repeat;
+  background: url("img/beach.jpg") repeat;
 
   /*background-color: #d6eaf8;*/
 }
 
 .bg-even{
-  background: url("img/sea.jpg") repeat;
+  background: url("img/cloud.jpg") repeat;
 
   /*background-color:   #d1f2eb;*/
 }
