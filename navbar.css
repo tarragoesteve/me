@@ -29,6 +29,8 @@
   color: #000;
   background-color:  #f5b7b1 ;
   border-radius: 10px;
+  padding-left: 10px;
+
 }
 
 .navbar-custom .navbar-toggler {
@@ -42,6 +44,7 @@
 
 .navbar-custom .navbar-text {
   color: rgba(255, 255, 255, 0.5);
+
 }
 
 .navbar-custom .navbar-text a {
