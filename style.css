@@ -1,16 +1,19 @@
-.icon {
+.icon-rss {
   height: 50px;
   opacity: 0.5;
 }
 
-.logo {
-  height: 80px;
-}
-
-.icon:hover {
+.icon-rss:hover {
   opacity: 1;
-
 }
+.icon-logo {
+  height: 25px;
+  opacity: 1;
+}
+.icon-logo:hover {
+  opacity: .5;
+}
+
 
 #portrait {
   width: 150px;
