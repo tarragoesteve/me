@@ -1,10 +1,10 @@
 .icon-rss {
   height: 50px;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .icon-rss:hover {
-  opacity: 1;
+  opacity: .5;
 }
 .icon-logo {
   height: 25px;
