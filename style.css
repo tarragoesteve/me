@@ -20,6 +20,10 @@ body{
   background: url("img/beach.jpg") repeat;
 }
 
+section {
+  padding-bottom: 0px;
+}
+
 #portrait {
   width: 150px;
   border-radius: 100px;
