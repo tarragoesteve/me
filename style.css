@@ -20,8 +20,14 @@ body{
   background: url("img/beach.jpg") repeat;
 }
 
-section {
+.section{
+  padding-top: 100px;
   padding-bottom: 0px;
+}
+
+.contact-section{
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 #portrait {

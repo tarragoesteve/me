@@ -33,7 +33,13 @@
             <a data-scroll class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a data-scroll class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+            <a data-scroll class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
             <a data-scroll class="nav-link js-scroll-trigger" href="#showcase">Showcase</a>
@@ -45,199 +51,248 @@
       </div>
     </div>
   </nav>
-  <section id="about" class="bg-odd pb-5">
-    <div class="container ">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
+  <section id="about" class="bg-odd section">
+    <div class="container col-lg-6 mx-auto">
+      <div class="card">
+        <h5 class="card-header">About me </h5>
+        <div class="card-body">
+          <img src="img/me.jpg" class="float-right" id="portrait" />
+          <p class="lead text-left">I was born in Barcelona in 1995. There I studied a double degree
+            program in Informatics Engineering & Industrial Engineering at UPC (CFIS).
+            I mostly specialize in deep learning and I'm looking forward to applying
+            reinforcement learning algorithms to the control of autonomous robots.
+          </p>
+          <div class="float-left" id="sport">
+          </div>
+          <p class="lead text-right"> In my free time I practice soccer and tennis weekly. I am a great skier
+            and scuba diver. Apart from making sports I do also love playing strategy board games as Catan, Risk or MTG.
+            I don't like video games, but I make an exception with Pokemon which I am a huge fan.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="bg-even section">
+      <div class="container col-lg-6 mx-auto">
+        <div id="accordion">
           <div class="card">
-            <h5 class="card-header">About me</h5>
-            <div class="card-body">
-              <img src="img/me.jpg" class="float-right" id="portrait">
-              <p class="lead text-left">I was born in Barcelona in 1995. There I studied a double degree
-                program in Informatics Engineering & Industrial Engineering at UPC (CFIS).
+            <h5 class="card-header">Experience</h5>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Researcher Intern at AutoID Lab, MIT
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
                 Since 2018 I have been working on my Bachelor Thesis at MIT (AutoID Lab) under the supervision of
-                Prof. Brian Subirana. I mostly specialize in deep learning and I'm looking forward to applying
-                reinforcement learning algorithms to the control of autonomous robots.</p>
-                <div class="float-left" id="sport"> </div>
-                <p class="lead text-right"> In my free time I practice soccer and tennis weekly. I am a great skier
-                  and scuba diver. Apart from making sports I do also love playing strategy board games as Catan, Risk or MTG.
-                  I don't like video games, but I make an exception with Pokemon which I am a huge fan.</p>
-                </div>
+                Prof. Brian Subirana.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Researcher Assistant at LARCA, UPC
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Researched on computational finances by creating interactive educational material and clustering financial data with R Shiny. <img src="img/larca.png" class="icon-logo"/>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Summer Internship at Hewlett Packard
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Designed a tool to automatically detect errors on servos and an algorithm to detect mediaedge using the cutter signal.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Volunteer at BEST Barcelona
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                <p>Topic Responsible of an European Engineering Competition coordinating a team of 10 members in order to design 3 tasks that 100 students had to solve in a limited time.</p>
+                <p>Developed the back-end of a polling web application so our members can vote. It's running on Node JS, MongoDB and has a Google credentials.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Hackathons
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                I have attended 7 hackathons in different cities including Cambridge, Stirling and Barcelona.
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="resume" class="bg-even py-5">
-        <div class="container">
-          <div class="row ">
-            <div class="col-lg-8 mx-auto">
-              <div id="accordion">
-                <div class="card">
-                  <h5 class="card-header">Experience</h2>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Researcher Intern at AutoID Lab, MIT</button>
-                        </h5>
-                      </div>
-
-                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Researcher Assistant at LARCA, UPC
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                          Researched on computational finances by creating interactive educational material and clustering financial data with R Shiny. <img src="img/larca.png" class="icon-logo"> </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Summer Internship at Hewlett Packard
-                            </button>
-                          </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                          <div class="card-body">
-                            Designed a tool to automatically detect errors on servos and an algorithm to detect mediaedge using the cutter signal.                    </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingFour">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Volunteer at BEST Barcelona
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                            <div class="card-body">
-                              <p>Topic Responsible of an European Engineering Competition coordinating a team of 10 members in order to design 3 tasks that 100 students had to solve in a limited time.</p>
-                              <p>Developed the back-end of a polling web application so our members can vote. It's running on Node JS, MongoDB and has a Google credentials.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingFive">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Hackathons
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                            <div class="card-body">
-                              I have attended 7 hackathons in different cities including Cambridge, Stirling and Barcelona.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <h2>Resume</h2>
-                      <h3>Experience </h3>
-
-                      <h4>Researcher Intern at AutoID Lab, MIT <img src="img/autoID.png" class="icon-logo"></h4>
-                      <h4>Researcher Assistant at LARCA, UPC <img src="img/larca.png" class="icon-logo"></h4>
-                      <p class="lead">Researched on computational finances by creating interactive educational material and clustering financial data with R Shiny.</p>
-                      <h4>Summer Internship at Hewlett Packard <img src="img/hp.png" class="icon-logo"></h4>
-                      <p class="lead">Designed a tool to automatically detect errors on servos and an algorithm to detect mediaedge using the cutter signal.</p>
-                      <h4>Volunteer at BEST Barcelona <img src="img/best_signature.png" class="icon-logo"></h4>
-                      <p class="lead">Topic Responsible of an European Engineering Competition coordinating a team of 10 members in order to design 3 tasks that 100 students had to solve in a limited time.</p>
-                      <p class="lead">Developed the back-end of a polling web application so our members can vote. It's running on Node JS, MongoDB and has a Google credentials.</p>
-
-                      <h4>Hackathons</h4>
-                      <h3>Education </h3>
-                      <h4>Double Degree Program at CFIS, UPC <img src="img/upc.png" class="icon-logo"> </h4>
-                      <h5>Bachelor's degree in Informatics Engineering, FIB, UPC <img src="img/fib_logo.png" class="icon-logo"> </h5>
-                      <h5>Bachelor's degree in Industrial Engineering, ETSEIB, UPC <img src="img/etseib.png" class="icon-logo"> </h5>
-
-
-                      <p class="lead"> During my studies I did an internship at HP, won two CARNET hackathons and organized an engineering competition.</p>
-
-
-                    </div>
-                  </div>
+    <section id="education" class="bg-even section">
+      <div class="container col-lg-6 mx-auto">
+        <div class="card">
+          <h5 class="card-header">Education</h5>
+          <p class="ml-3">CFIS</p>
+          <div class="row mx-auto">
+            <div class="col-sm-6 my-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Informatics Engineering</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
-              </section>
-
-              <section id="showcase" class="bg-odd">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                      <h2>Showcase</h2>
-                      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="col-sm-6 my-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Industrial Engineering</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
-              </section>
+              </div>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </section>
 
+    <section id="skills" class="bg-even section">
+      <div class="container col-lg-6 mx-auto">
+        <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Languages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Programing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Others</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-              <section id="contact" class="bg-even">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                      <h2>Contact me</h2>
-
-                      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto!</p>
-                      <div class="row">
-                        <div class="col">
-                          <a href="https://github.com/tarragoesteve"> <img src="img/rss/iconmonstr-github-5.svg" class="icon-rss"> </a>
-                        </div>
-                        <div class="col">
-                          <a href="https://www.linkedin.com/in/tarragoesteve/"> <img src="img/rss/iconmonstr-linkedin-5.svg" class="icon-rss"> </a>
-                        </div>
-                        <div class="col">
-                          <a href="https://www.instagram.com/tarragoesteve/"> <img src="img/rss/iconmonstr-instagram-15.svg" class="icon-rss"> </a>
-                        </div>
-                        <div class="col">
-                          <a href="https://t.me/tarragoesteve"> <img src="img/rss/iconmonstr-telegram-5.svg" class="icon-rss"> </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+    <section id="showcase" class="bg-even section">
+      <div class="container col-lg-6 mx-auto">
+        <div class="card">
+          <h5 class="card-header">Showcase</h5>
+          <div class="row px-2">
+            <div class="col-sm-4 my-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-              </section>
-
-              <!-- Footer -->
-              <footer class="py-3 bg-footer">
-                <div class="container">
-                  <p class="m-0 text-center text-white">Copyright &copy; Esteve Tarrag&oacute; 2018</p>
+              </div>
+            </div>
+            <div class="col-sm-4 my-2 ">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <!-- /.container -->
-              </footer>
+              </div>
+            </div>
+            <div class="col-sm-4 my-2 ">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
 
-              <!-- Bootstrap core JavaScript -->
-              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-              <!-- Custom JavaScript for scrolling -->
-              <!-- Get minor updates and patch fixes within a major version -->
-              <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
-              <script>
-              var scroll = new SmoothScroll('a[href*="#"]');
-              $('.nav-link').on('click', function(){
-                if ($(window).width() < 540){
-                  $('.navbar-toggler').click(); //bootstrap 4.x
-                }
-              });
-              </script>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            </body>
-            </html>
+
+    <section id="contact" class="bg-even contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="row">
+              <div class="col">
+                <a href="https://github.com/tarragoesteve"> <img src="img/rss/iconmonstr-github-5.svg" class="icon-rss"> </a>
+              </div>
+              <div class="col">
+                <a href="https://www.linkedin.com/in/tarragoesteve/"> <img src="img/rss/iconmonstr-linkedin-5.svg" class="icon-rss"> </a>
+              </div>
+              <div class="col">
+                <a href="https://www.instagram.com/tarragoesteve/"> <img src="img/rss/iconmonstr-instagram-15.svg" class="icon-rss"> </a>
+              </div>
+              <div class="col">
+                <a href="https://t.me/tarragoesteve"> <img src="img/rss/iconmonstr-telegram-5.svg" class="icon-rss"> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-footer">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Esteve Tarrag&oacute; 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript for scrolling -->
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+    $('.nav-link').on('click', function(){
+      if ($(window).width() < 540){
+        $('.navbar-toggler').click(); //bootstrap 4.x
+      }
+    });
+    </script>
+
+  </body>
+  </html>
