@@ -16,6 +16,9 @@
   opacity: .5;
 }
 
+body{
+  background: url("img/beach.jpg") repeat;
+}
 
 #portrait {
   width: 150px;
@@ -41,13 +44,15 @@
 }
 
 .bg-odd{
-  background: url("img/beach.jpg") repeat;
+  /*background: url("img/beach.jpg") repeat;*/
 
   /*background-color: #d6eaf8;*/
 }
 
 .bg-even{
-  background: url("img/cloud.jpg") repeat;
+  /*background: url("img/beach.jpg") repeat;*/
+
+  /*background: url("img/cloud.jpg") repeat;*/
 
   /*background-color:   #d1f2eb;*/
 }
