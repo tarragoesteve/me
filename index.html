@@ -145,7 +145,7 @@
           <div class="card">
             <div class="card-header" id="headingFive">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="hack_click()">
                   Hackathons
                 </button>
               </h5>
@@ -301,19 +301,79 @@
       }
     });
 
-    var mymap = L.map('mapid').setView([51.505, -0.09], 3);
+    var mymap = L.map('mapid').setView([48.6100421,15], 4);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(mymap);
+    tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    	maxZoom: 19,
+    	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    });
+
+    tiles.addTo(mymap);
+
+
+    hexagon_side = 25;
+
+    //30 PI/6
+
+
+    //console.log(Math.sin(Math.PI/6.))
     var hexagon1 = L.icon({
-      iconUrl: 'iconmonstr-hexagon-2.svg',
+      iconUrl: 'img/hexagon.svg',
 
-      iconSize:     [50, 50], // size of the icon
-      iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+      iconSize:     [2*hexagon_side, 2*hexagon_side], // size of the icon
+      iconAnchor:   [Math.sin(Math.PI/6.)*hexagon_side, 0], // point of the icon which will correspond to marker's location
       //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
     });
-    L.marker([51.5, -0.09], {icon: hexagon}).addTo(mymap);
+
+    var hexagon2 = L.icon({
+      iconUrl: 'img/hexagon.svg',
+
+      iconSize:     [2*hexagon_side, 2*hexagon_side], // size of the icon
+      iconAnchor:   [2*hexagon_side, Math.cos(Math.PI/6.)*hexagon_side], // point of the icon which will correspond to marker's location
+      //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+
+    var hexagon3 = L.icon({
+      iconUrl: 'img/hexagon.svg',
+
+      iconSize:     [2*hexagon_side, 2*hexagon_side], // size of the icon
+      iconAnchor:   [Math.sin(Math.PI/6.)*hexagon_side, 2*Math.cos(Math.PI/6.)*hexagon_side ], // point of the icon which will correspond to marker's location
+      //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+
+    var hexagon4 = L.icon({
+      iconUrl: 'img/hexagon.svg',
+
+      iconSize:     [2*hexagon_side, 2*hexagon_side], // size of the icon
+      iconAnchor:   [2*hexagon_side, -Math.cos(Math.PI/6.)*hexagon_side ], // point of the icon which will correspond to marker's location
+      //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+    var hexagon0 = L.icon({
+      iconUrl: 'img/hexagon.svg',
+
+      iconSize:     [2*hexagon_side, 2*hexagon_side], // size of the icon
+      iconAnchor:   [hexagon_side, Math.sin(Math.PI/6.)*hexagon_side], // point of the icon which will correspond to marker's location
+      //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+    campus_nord = [41.3860265, 2.1094314]
+    L.marker(campus_nord, {icon: hexagon1}).addTo(mymap);
+    L.marker(campus_nord, {icon: hexagon2}).addTo(mymap);
+    L.marker(campus_nord, {icon: hexagon3}).addTo(mymap);
+    L.marker(campus_nord, {icon: hexagon4}).addTo(mymap);
+    stirling = [56.1459201,-3.9210677]
+    L.marker(stirling, {icon: hexagon0}).addTo(mymap);
+    cambridge = [52.2035513,0.1101886]
+    L.marker(cambridge, {icon: hexagon0}).addTo(mymap);
+
+
+
+
+    function hack_click() {
+      console.log("Hello");
+       setTimeout(function(){   mymap.invalidateSize(); }, 1);
+
+    }
+
 
 
 
