@@ -302,9 +302,21 @@
     });
 
     var mymap = L.map('mapid').setView([51.505, -0.09], 3);
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(mymap);
+    var hexagon1 = L.icon({
+      iconUrl: 'iconmonstr-hexagon-2.svg',
+
+      iconSize:     [50, 50], // size of the icon
+      iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+      //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+    L.marker([51.5, -0.09], {icon: hexagon}).addTo(mymap);
+
+
+
     </script>
   </body>
   </html>
