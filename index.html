@@ -153,7 +153,7 @@
             </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
               <div class="card-body my-text">
-                I have attended 7 hackathons in different cities including Cambridge, Stirling and Barcelona. Click on the hexagons to get more information.
+                I have attended 7 hackathons in different cities including Cambridge, Stirling and Barcelona. On all of them I've learned a lot of things and on two of them my team won the first prize (about 2000$). Click on the hexagons to get more information of each hackathon.
                 <div id="mapid"></div>
               </div>
             </div>
@@ -312,7 +312,7 @@
     tiles.addTo(mymap);
 
 
-    hexagon_side = 25;
+    hexagon_side = 30;
 
     //30 PI/6
 
@@ -376,7 +376,7 @@
       title: "Hackathon Mobility 2017"}).bindPopup("<b>Hackathon Mobility 2016</b><br>Blablabla <br> <a href='https://github.com/tarragoesteve/trainyourspaceship'> <img src='img/rss/iconmonstr-github-5.svg' class='icon-rss'> </a>").addTo(mymap);
     stirling = [56.1459201,-3.9210677]
     L.marker(stirling, {icon: stirhack_hex,
-    title: "StirHack 2017"}).bindPopup("<b>StirHack 2017</b><br>We did an arcade spaceship game that will you where playing you trainned a Neural Networl to mimic your gameplay. <br> <a href='https://github.com/tarragoesteve/trainyourspaceship'> <img src='img/rss/iconmonstr-github-5.svg' class='icon-rss'> </a>").addTo(mymap);
+    title: "StirHack 2017"}).bindPopup("<b>StirHack 2017</b><br>We did an arcade spaceship game that while you where playing you trainned a Neural Networl to mimic your gameplay. <br> <a href='https://github.com/tarragoesteve/trainyourspaceship'> <img src='img/rss/iconmonstr-github-5.svg' class='icon-rss'> </a>").addTo(mymap);
     cambridge = [52.2035513,0.1101886]
     L.marker(cambridge, {icon: hackcambridge_hex,
     title:"Hack Cambridge 2017"}).bindPopup("<b>Hack Cambridge 2017</b><br>We did a web to create mosaics in stadium with attendees phone screens. We where using a QR code and OpenCV to calculate the individual position. <br> <a href='https://github.com/tarragoesteve/ewave'> <img src='img/rss/iconmonstr-github-5.svg' class='icon-rss'> </a>").addTo(mymap);
@@ -384,8 +384,7 @@
 
 
     function hack_click() {
-      console.log("Hello");
-       setTimeout(function(){   mymap.invalidateSize(); }, 1);
+       setTimeout(function(){   mymap.invalidateSize(); }, 0);
 
     }
 
