@@ -153,7 +153,7 @@
             </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
               <div class="card-body my-text">
-                I have attended 7 hackathons in different cities including Cambridge, Stirling and Barcelona.
+                I have attended 7 hackathons in different cities including Cambridge, Stirling and Barcelona. Click on the hexagons to get more information.
                 <div id="mapid"></div>
               </div>
             </div>
@@ -349,12 +349,21 @@
       iconAnchor:   [2*hexagon_side, -Math.cos(Math.PI/6.)*hexagon_side ], // point of the icon which will correspond to marker's location
       //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
     });
-    var hexagon0 = L.icon({
-      iconUrl: 'img/hexagon.svg',
+
+    var stirhack_hex = L.icon({
+      iconUrl: 'img/stirhack_hexagon.png',
 
       iconSize:     [2*hexagon_side, 2*hexagon_side], // size of the icon
       iconAnchor:   [hexagon_side, Math.sin(Math.PI/6.)*hexagon_side], // point of the icon which will correspond to marker's location
-      //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+      popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+    });
+
+    var hackcambridge_hex = L.icon({
+      iconUrl: 'img/hackcambridge_hexagon.png',
+
+      iconSize:     [2*hexagon_side, 2*hexagon_side], // size of the icon
+      iconAnchor:   [hexagon_side, Math.sin(Math.PI/6.)*hexagon_side], // point of the icon which will correspond to marker's location
+      popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
     });
     campus_nord = [41.3860265, 2.1094314]
     L.marker(campus_nord, {icon: hexagon1}).addTo(mymap);
@@ -362,10 +371,11 @@
     L.marker(campus_nord, {icon: hexagon3}).addTo(mymap);
     L.marker(campus_nord, {icon: hexagon4}).addTo(mymap);
     stirling = [56.1459201,-3.9210677]
-    L.marker(stirling, {icon: hexagon0}).addTo(mymap);
+    L.marker(stirling, {icon: stirhack_hex,
+    title: "StirHack 2017"}).bindPopup("<b>StirHack 2017</b><br>We did an arcade spaceship game that will you where playing you trainned a Neural Networl to mimic your gameplay. <br> <a href='https://github.com/tarragoesteve/trainyourspaceship'> <img src='img/rss/iconmonstr-github-5.svg' class='icon-rss'> </a>").addTo(mymap);
     cambridge = [52.2035513,0.1101886]
-    L.marker(cambridge, {icon: hexagon0}).addTo(mymap);
-
+    L.marker(cambridge, {icon: hackcambridge_hex,
+    title:"Hack Cambridge 2017"}).bindPopup("<b>Hack Cambridge 2017</b><br>We did a web to create mosaics in stadium with attendees phone screens. We where using a QR code and OpenCV to calculate the individual position. <br> <a href='https://github.com/tarragoesteve/ewave'> <img src='img/rss/iconmonstr-github-5.svg' class='icon-rss'> </a>").addTo(mymap);
 
 
 
