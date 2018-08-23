@@ -1,3 +1,35 @@
+.plus-icon{
+  background: url("img/iconmonstr-plus-6.svg") no-repeat;
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.minus-icon{
+  background: url("img/iconmonstr-minus-6.svg") no-repeat;
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.my-text{
+  /*font-family: "Verdana";*/
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.my-h5{
+  /*font-family: "Verdana";*/
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.my-h6{
+    /*font-family: "Verdana";*/
+    font-size: 18px;
+    font-weight: bold;
+}
+
 #mapid { height: 400px;
 
  }

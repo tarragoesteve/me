@@ -30,7 +30,6 @@
     <div class="container">
       <a data-scroll class="navbar-brand js-scroll-trigger" href="#about">Esteve Tarrag&oacute;</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -59,17 +58,17 @@
   <section id="about" class="bg-odd section">
     <div class="container col-lg-6 mx-auto">
       <div class="card">
-        <h5 class="card-header">About me </h5>
+        <h5 class="card-header my-h5">About me </h5>
         <div class="card-body">
           <img src="img/me.jpg" class="float-right" id="portrait" />
-          <p class="lead text-left">I was born in Barcelona in 1995. There I studied a double degree
+          <p class="text-left my-text">I was born in Barcelona in 1995. There I studied a double degree
             program in Informatics Engineering & Industrial Engineering at UPC (CFIS).
             I mostly specialize in deep learning and I'm looking forward to applying
             reinforcement learning algorithms to the control of autonomous robots.
           </p>
           <div class="float-left" id="sport">
           </div>
-          <p class="lead text-right"> In my free time I practice soccer and tennis weekly. I am a great skier
+          <p class="text-right my-text"> In my free time I practice soccer and tennis weekly. I am a great skier
             and scuba diver. Apart from making sports I do also love playing strategy board games as Catan, Risk or MTG.
             I don't like video games, but I make an exception with Pokemon which I am a huge fan.</p>
         </div>
@@ -77,23 +76,23 @@
       </div>
     </section>
 
+    <span class="glyphicon glyphicon-plus"></span>
     <section id="experience" class="bg-even section">
       <div class="container col-lg-6 mx-auto">
         <div id="accordion">
           <div class="card">
-            <h5 class="card-header">Experience</h5>
+            <h5 class="card-header my-h5">Experience</h5>
           </div>
           <div class="card">
             <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Researcher Intern at AutoID Lab, MIT
-                </button>
-              </h5>
+              <h6 class="mb-0 collapsed my-h6" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="plus-icon float-right"></div>
+                Researcher Intern at AutoID Lab, MIT
+              </h6>
             </div>
 
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="card-body">
+              <div class="card-body my-text">
                 Since 2018 I have been working on my Bachelor Thesis at MIT (AutoID Lab) under the supervision of
                 Prof. Brian Subirana.
               </div>
@@ -101,42 +100,39 @@
           </div>
           <div class="card">
             <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h6 class="mb-0 collapsed my-h6" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <div class="plus-icon float-right"></div>
                   Researcher Assistant at LARCA, UPC
-                </button>
-              </h5>
+              </h6>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
+              <div class="card-body my-text">
                 Researched on computational finances by creating interactive educational material and clustering financial data with R Shiny. <img src="img/larca.png" class="icon-logo"/>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h6 class="mb-0 collapsed my-h6" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <div class="plus-icon float-right"></div>
                   Summer Internship at Hewlett Packard
-                </button>
-              </h5>
+              </h6>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="card-body">
+              <div class="card-body my-text">
                 Designed a tool to automatically detect errors on servos and an algorithm to detect mediaedge using the cutter signal.
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingFour">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Volunteer at BEST Barcelona
-                </button>
-              </h5>
+              <h6 class="mb-0 collapsed my-h6" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <div class="plus-icon float-right"></div>
+                Volunteer at BEST Barcelona
+              </h6>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-              <div class="card-body">
+              <div class="card-body my-text">
                 <p>Topic Responsible of an European Engineering Competition coordinating a team of 10 members in order to design 3 tasks that 100 students had to solve in a limited time.</p>
                 <p>Developed the back-end of a polling web application so our members can vote. It's running on Node JS, MongoDB and has a Google credentials.</p>
               </div>
@@ -144,14 +140,13 @@
           </div>
           <div class="card">
             <div class="card-header" id="headingFive">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="hack_click()">
+              <h6 class="mb-0 collapsed my-h6" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" onclick="hack_click()">
+                <div class="plus-icon float-right"></div>
                   Hackathons
-                </button>
-              </h5>
+              </h6>
             </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-              <div class="card-body">
+              <div class="card-body my-text">
                 I have attended 7 hackathons in different cities including Cambridge, Stirling and Barcelona.
                 <div id="mapid"></div>
               </div>
@@ -301,7 +296,7 @@
       }
     });
 
-    var mymap = L.map('mapid').setView([48.6100421,15], 4);
+    var mymap = L.map('mapid').setView([46.9593686,-0.4655807], 4);
 
     tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     	maxZoom: 19,
@@ -373,6 +368,16 @@
        setTimeout(function(){   mymap.invalidateSize(); }, 1);
 
     }
+
+    /////////////
+    $('.collapse').on('shown.bs.collapse', function(){
+      console.log($(this).parent());
+      $(this).parent().find(".plus-icon").removeClass("plus-icon").addClass("minus-icon");
+      }).on('hidden.bs.collapse', function(){
+        console.log($(this).parent());
+
+      $(this).parent().find(".minus-icon").removeClass("minus-icon").addClass("plus-icon");
+    });
 
 
 
