@@ -2,6 +2,16 @@
   background-color: #c0392b;
 }
 
+@font-face {
+   font-family: myFont;
+   src: url(css/font/Zilap.ttf);
+}
+
+.navbar-brand {
+  font-family: myFont;
+  /*font-size: 30px;*/
+}
+
 .navbar-custom .navbar-brand {
   color: #fff;
 }
