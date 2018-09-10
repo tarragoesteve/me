@@ -45,9 +45,12 @@
   opacity: .5;
 }
 .icon-logo {
-  height: 25px;
+  height: 50px;
   opacity: 1;
+  margin: auto;
+  display: block;
 }
+
 .icon-logo:hover {
   opacity: .5;
 }
