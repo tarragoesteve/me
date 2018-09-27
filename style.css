@@ -44,6 +44,7 @@
 .icon-rss:hover {
   opacity: .5;
 }
+
 .icon-logo {
   height: 50px;
   opacity: 1;
@@ -56,17 +57,27 @@
 }
 
 body{
-  background: url("img/beach.jpg") repeat;
+  background: url("img/beach_2.jpg") repeat;
 }
 
+
+
 .section{
-  padding-top: 100px;
+  margin-top: 0px;
+  padding-top: 60px;
   padding-bottom: 0px;
 }
 
-.contact-section{
-  padding-top: 50px;
-  padding-bottom: 20px;
+#about {
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+
+#contact{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #portrait {
