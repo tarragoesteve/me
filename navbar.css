@@ -1,7 +1,7 @@
 .navbar-custom {
   /*background: url("img/towel.jpg") repeat;*/
 
-  background-color: #c0392b;
+  background-color: #b30000;
 }
 
 @font-face {
@@ -38,7 +38,7 @@
 .navbar-custom .navbar-nav .nav-link.show,
 .navbar-custom .navbar-nav .nav-link.active {
   color: #000;
-  background-color:  #f5b7b1 ;
+  background-color:  #ffcccc ;
   border-radius: 10px;
   padding-left: 10px;
 }
