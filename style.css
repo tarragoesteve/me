@@ -12,6 +12,19 @@
   width: 20px;
 }
 
+.showcase-image{
+  background: url("img/railmap.png") no-repeat;
+  background-size: 150px;
+  margin-left: 10px;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.showcase-image:hover {
+  opacity: .5;
+}
+
 .my-text{
   /*font-family: "Verdana";*/
   font-size: 18px;
