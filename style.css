@@ -13,8 +13,6 @@
 }
 
 .showcase-image{
-  background: url("img/railmap.png") no-repeat;
-  background-size: 150px;
   margin-left: 10px;
   height: 150px;
   width: 150px;
@@ -51,7 +49,12 @@
   height: 50px;
   opacity: 1;
   margin: auto;
-  display: block;
+  display: inline;
+}
+
+
+.print-text{
+  display: none;
 }
 
 .icon-rss:hover {
@@ -94,8 +97,6 @@ body{
 }
 
 #portrait {
-  background: url("img/me.jpg") no-repeat;
-  background-size: 150px;
   margin-left: 10px;
   height: 150px;
   width: 150px;
@@ -140,4 +141,49 @@ body{
 
 .programming-logo{
   height: 20px;
+}
+
+#footer{
+  color: #FFF;
+}
+
+@media print {
+  .collapse {
+    display: block !important;
+    height: auto !important;
+  }
+  .no-cut{
+    page-break-inside: avoid;
+  }
+  #mapid{
+    display: none;
+  }
+  #mainNav{
+    display: none;
+  }
+  #instagram{
+    display: none;
+  }
+
+  #telegram{
+    display: none;
+  }
+  #about {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .section{
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+
+  .print-text{
+    display: block;
+  }
+
+  #footer{
+    color: #000;
+  }
+  
 }
