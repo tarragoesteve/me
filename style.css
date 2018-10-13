@@ -49,7 +49,7 @@
   height: 50px;
   opacity: 1;
   margin: auto;
-  display: inline;
+  display: block;
 }
 
 
@@ -162,6 +162,10 @@ body{
     display: none;
   }
   #instagram{
+    display: none;
+  }
+
+  #print-icon{
     display: none;
   }
 
