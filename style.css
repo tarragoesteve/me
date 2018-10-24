@@ -103,20 +103,6 @@ body{
   border-radius: 10px;
 }
 
-#sport {
-  background: url("img/ski.jpg") no-repeat;
-  background-size: 150px;
-  margin-right: 10px;
-  height: 150px;
-  width: 150px;
-  border-radius: 10px;
-}
-
-#sport:hover {
-  background: url("img/diving.jpg") no-repeat;
-  background-size: 150px;
-
-}
 
 .bg-footer{
   background-color:  #b30000;
